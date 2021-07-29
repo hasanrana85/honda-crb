@@ -1,0 +1,183 @@
+/* --------------
+google font poppins 
+-------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ------------
+  Common css   
+  ------------ */
+body {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+/* ----------------------
+  navigation-part start   
+  ----------------------*/
+header {
+    background-color: #264653;
+}
+
+.menu-padding {
+    padding-top: 42px;
+}
+
+.nav-btn {
+    background-color: #E76F51;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+.icon-left,
+ul li {
+    margin-left: 36px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/* ----------------------
+  navigation-part end   
+  ----------------------*/
+
+/* ----------------------
+  header-banner-part start   
+  ----------------------*/
+.banner-part{
+    padding: 69px 0 96px 0;
+}
+.custom-p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.banner-heading{
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+/* .latest-btn, */
+.banner-btn{
+    background-color: #E76F51;
+    padding: 10px 46px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+/* ----------------------
+  header-banner-part end   
+  ----------------------*/
+
+
+/* ----------------------
+  featured-part start   
+  ----------------------*/
+  .featured-heading{
+       font-size: 48px;
+       font-weight: 600;
+       color: #000000;
+  }
+  .featured-p{
+      font-size: 14px;
+      font-weight: 600;
+      color: #E76F51;
+  }
+  .gray-image{
+      filter:grayscale(100%);
+  }
+/* ----------------------
+  featured-banner- end   
+  ----------------------*/
+
+/* ----------------------
+  Latest-part- start  
+  ----------------------*/
+h4{
+    font-size: 28px;
+    font-weight: 600;
+    color: #18191F;
+}
+  .latest-heading{
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+}
+.latest-btn{
+     background-color: #E76F51;
+     padding: 15px 25px;
+     font-size: 18px;
+     color: #FFFFFF;
+     font-weight: 500;
+}
+/* ----------------------
+  Latest-part- end  
+  ----------------------*/
+
+/* ----------------------
+  Clients-part- start
+  ----------------------*/
+  .frequently-heading,
+  .clients-heading{
+      font-size: 48px;
+      font-weight: 600;
+  }
+  .fas{
+      color: #E77C40;
+      font-size: 20px;
+  }
+  .far{
+      font-size: 20px;
+  }
+  .clients-p{
+      color: #23A6F0;
+      font-size: 14px;
+      font-weight: 600;
+  }
+  .banker{
+      color: #252B42;
+      font-size: 14px;
+      font-weight: 600;
+  }
+/* ----------------------
+  Clients-part- end
+  ----------------------*/
+
+  /* ----------------------
+  footer-part- start
+  ----------------------*/
+  footer{
+      background-color: #0B0D17;
+  }
+  .custom-foot {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    border: 1px dotted red;
+  }
+
+  .custom-foot:hover {
+    background-color: #5cb100;
+    transition: 1s;
+  }
+
+  .custom-h {
+    color: #5cb100;
+  }
+
+  .foot {
+    background-color: #5cb100;
+  }
+  /* ----------------------
+  footer-part- end
+  ----------------------*/

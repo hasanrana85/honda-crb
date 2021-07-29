@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda-cbr-bootstrap</title>
+    <!-- bootstrap stylesheet  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/fd26134d84.js" crossorigin="anonymous"></script>
+    <!-- custom css stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header part start  -->
+    <header>
+        <!-- navigation part start -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container menu-padding">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler icon-left" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shope</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn nav-btn rounded-3">Login</button>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation part end -->
+
+        <!-- header banner part start -->
+        <section class="container">
+            <div class="row gx-3 banner-part">
+                <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-between align-items-center">
+                    <div class="p-3">
+                        <p class="custom-p">Computer-controlled digital transistorized with electronic advance</p>
+                        <h2 class="banner-heading">Honda CBR 300R</h2>
+                        <p class="custom-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                            amet.</p>
+                        <!-- <button type="button" class="btn banner-btn rounded-3" ata-bs-toggle="modal" data-bs-target="#staticBackdrop">Purchase</button> -->
+                        <button type="button" class="btn banner-btn px-5 py-3" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Purchase
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-between align-items-center">
+                    <div class="p-4">
+                        <img class="img-fluid" src="images/header-bike.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- header banner part end -->
+
+        <!-- Purchase Modal start -->
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h5 class="modal-title" id="staticBackdropLabel">Online Product Purchase Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-light">
+                        <!-- purchase form start -->
+                        <form>
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="exampleInputName"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputStreet" class="form-label">Street address</label>
+                                    <input type="text" class="form-control" id="exampleInputStreet"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputStreetline2" class="form-label">Street address
+                                        Line-2</label>
+                                    <input type="text" class="form-control" id="exampleInputStreet"
+                                        aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6 col-md-6 col-lg-6">
+                                        <div>
+                                            <label for="exampleInputCity" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="exampleInputCity"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-6">
+                                        <div>
+                                            <label for="exampleInputState" class="form-label">State</label>
+                                            <input type="text" class="form-control" id="exampleInputState"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-6">
+                                        <div>
+                                            <label for="exampleInputPostal" class="form-label">Postal code/ Zip
+                                                code</label>
+                                            <input type="number" class="form-control" id="exampleInputPostal"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-6">
+                                        <div>
+                                            <label for="exampleInputConuntry" class="form-label">Country</label>
+                                            <input type="text" class="form-control" id="exampleInputCountry"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPhone" class="form-label">Phone No</label>
+                                <input type="tel" class="form-control" id="exampleInputPhone"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <label for="MyIterest" class="form-label">My Interest</label>
+                            <textarea name="iterest" id="MyIterest" cols="30" rows="10"></textarea>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Form</button>
+                            <button type="submit" class="btn btn-primary">Clear Form</button>
+                            <button type="submit" class="btn btn-primary">print form</button>
+                        </form>
+                        <!--  purchase form end -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- purchase Modal end -->
+
+    </header>
+    <!-- header part end  -->
+
+    <!-- main part start -->
+    <main>
+        <!-- featured part start -->
+        <section class="container my-5">
+            <div class="text-center">
+                <h3 class="featured-heading">Fetured Bikes 2021</h3>
+                <p class="featured-p">Best bike collection</p>
+            </div>
+            <div class="row py-4">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="p-5">
+                        <img class="img-fluid gray-image" src="images/feature-bike.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="p-5">
+                        <img class="img-fluid" src="images/feature-bike.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="p-5">
+                        <img class="img-fluid gray-image" src="images/feature-bike.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured part end -->
+
+        <!-- Latest news part start -->
+        <section class="container">
+            <div class="text-center">
+                <h3 class="latest-heading">Latest News</h3>
+            </div>
+            <div class="row g-4 py-5">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="border rounded-3">
+                        <div class="p-4">
+                            <div>
+                                <img class="img-fluid" src="images/bike-1.png" alt="">
+                            </div>
+                            <div class="mt-4">
+                                <h4>Ducati XDIAVEL S-73</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+                                    faucibus
+                                    sed id nisi lectus at.</p>
+                                <button class="btn latest-btn text-capitalize mt-3">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="border rounded-3">
+                        <div class="p-4">
+                            <div>
+                                <img class="img-fluid" src="images/bike-2.png" alt="">
+                            </div>
+                            <div class="mt-4">
+                                <h4>Motorcycles & Scooters</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+                                    faucibus
+                                    sed id nisi lectus at.</p>
+                                <button class="btn latest-btn text-capitalize mt-3">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="border rounded-3">
+                        <div class="p-4">
+                            <div>
+                                <img class="img-fluid" src="images/bike-3.png" alt="">
+                            </div>
+                            <div class="mt-4">
+                                <h4>2021 Honda CBR500R</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet
+                                    faucibus
+                                    sed id nisi lectus at.</p>
+                                <button class="btn latest-btn text-capitalize mt-3">Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest news part end -->
+
+        <!-- happy client part start -->
+        <section class="container my-5 py-5">
+            <div class="text-center mb-5">
+                <h3 class="clients-heading"><span style="color: #0A0826;">Happy</span> <span
+                        style="color: #E76F51;">Clients says</span> </h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="border rounded-3">
+                        <div class="p-5">
+                            <div class="p-5 d-flex justify-content-center align-items-center">
+                                <img class="img-fluid" src="images/user-1.png" alt="">
+                            </div>
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <p class="text-center">Slate helps you see how
+                                        many more days you need
+                                        to work to reach your financial
+                                        goal for the month and year.</p>
+                                    <p><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i></p>
+                                    <p class="clients-p">Regina Miles</p>
+                                    <p class="banker">Banker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="border rounded-3">
+                        <div class="p-5">
+                            <div class="p-5 d-flex justify-content-center align-items-center">
+                                <img class="img-fluid" src="images/user-2.png" alt="">
+                            </div>
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <p class="text-center">Slate helps you see how
+                                        many more days you need
+                                        to work to reach your financial
+                                        goal for the month and year.</p>
+                                    <p><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i></p>
+                                    <p class="clients-p">Regina Miles</p>
+                                    <p class="banker">Banker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="border rounded-3">
+                        <div class="p-5">
+                            <div class="p-5 d-flex justify-content-center align-items-center">
+                                <img class="img-fluid rounded-circle" src="images/user-1.png" alt="">
+                            </div>
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <p class="text-center">Slate helps you see how
+                                        many more days you need
+                                        to work to reach your financial
+                                        goal for the month and year.</p>
+                                    <p><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i></p>
+                                    <p class="clients-p">Regina Miles</p>
+                                    <p class="banker">Banker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- happy client part end -->
+
+        <!-- frequently asked questions part start -->
+        <section class="container">
+            <div class="text-center mb-5">
+                <h3 class="frequently-heading"><span style="color: #0A0826;">Frequently Asked</span> <span
+                        style="color: #E76F51;">Questions</span> </h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 p-5">
+                    <div class="p-5">
+                        <img class="img-fluid" src="images/faq.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="p-5">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        What are the most important things I should
+                                        know about riding a bike?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item mb-5">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        How can I tell if my helmet is old and I need a
+                                        new one?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        My bike has been in storage is it safe to ride?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        What rules should I follow when riding my bike?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- frequently asked questions part end -->
+        <!-- Our services part start -->
+        <section class="container mb-5">
+            <div class="text-center mb-5">
+                <h3 class="frequently-heading"><span style="color: #0A0826;">How We </span> <span
+                        style="color: #E76F51;">Works</span> </h3>
+            </div>
+            <!-- carousel code here -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="p-5 d-flex justify-content-center align-items-center">
+                                    <img class="rounded-3 img-fluid" src="images/clean1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="p-5">
+                                        <h5 style="color: #E76F51; class=" fw-bold text-dark text-uppercase">Bike
+                                            Cleaning</h5>
+                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
+                                            Even the all-powerful Pointing has no control about the blind texts it is an
+                                            almost unorthographic. default variables. It's also worth noting that just
+                                            about any HTML can go within the .accordion-body, though the</p>
+                                        <a href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="p-5 d-flex justify-content-center align-items-center">
+                                    <img class="rounded-3 img-fluid" src="images/repairing.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="p-5">
+                                        <h5 style="color: #E76F51; class=" fw-bold text-dark text-uppercase">Bike
+                                            Repearing</h5>
+                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
+                                            Even the all-powerful Pointing has no control about the blind texts it is an
+                                            almost unorthographic. default variables. It's also worth noting that just
+                                            about any HTML can go within the .accordion-body, though the</p>
+                                        <a href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="p-5 d-flex justify-content-center align-items-center">
+                                    <img class="rounded-3 img-fluid" src="images/hairing-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="p-5">
+                                        <h5 style="color: #E76F51; class=" fw-bold text-dark text-uppercase">Bike
+                                            hairing</h5>
+                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
+                                            Even the all-powerful Pointing has no control about the blind texts it is an
+                                            almost unorthographic. default variables. It's also worth noting that just
+                                            about any HTML can go within the .accordion-body, though the</p>
+                                        <a href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- Our services part end -->
+
+        <!-- contact part start -->
+        <!-- <section class="container mb-5">
+            <div class="text-center mb-5">
+                <h3 class="frequently-heading"><span style="color: #0A0826;">Contact With </span> <span
+                        style="color: #E76F51;">Us</span> </h3>
+            </div>
+
+        </section> -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-center">
+                <div class="w-50 text-center">
+                    <h1 class="oheading fw-bold border-bottom border-primary border-5 pb-4 shadow-lg mt-5">Contact Us
+                    </h1>
+                    <p class="mt-3 text-dark">Far far away,
+                        behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-8">
+                    <div class="p-3">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-6">
+                                    <div class="p-2">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6">
+                                    <div class="p-2">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="p-2">
+                                <textarea class="form-control" placeholder="Massege" rows="10" cols="50"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="p-3">
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="fas fa-map-marker-alt text-warning"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Location</h3>
+                                <small>sector:06, road:08, house:14 uttara-1230</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="far fa-clock text-warning"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Open hours:</h3>
+                                <small>Sunday-Friday:</small>
+                                <small>11:00am - 11:00pm</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="far fa-envelope text-warning"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Email:</h3>
+                                <small>theroyelcoatching@gmail.com</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="fas fa-phone-alt text-warning"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Call:</h3>
+                                <small>+880 1777-990704</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact part end -->
+
+    </main>
+    <!-- main part end -->
+
+    <!-- footer part start -->
+    <footer>
+        <!-- <section class="conatainer">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="p-5 text-white">
+                        <p>Download Now License</p>
+                        <p>About Features Pricing Careers Help Privacy Policy</p>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="p-5 text-white">
+                        <p class="">Get the App</p>
+                        <div class="p-5"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-white">© 2020 bike. All rights reserved</p>
+        </section> -->
+        <section class="container py-5">
+            <div class="row p-5 g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">About us</h4>
+                    <p class="text-white mt-5">Far far away, behind the word mountains, far from the countries Vokalia
+                        and Consonantia, there
+                        live the blind texts.</p>
+                    <div class="d-flex mt-5">
+                        <div class="custom-foot">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-behance"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">Our Services</h4>
+                    <div class="mt-5">
+                        <p class="text-white">Bike Cleaning</p>
+                        <p class="text-white">Bike Repearing</p>
+                        <p class="text-white">Bike hairing</p>
+                        <p class="text-white">Make sure Insurance</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">Gallery</h4>
+                    <div class="row g-3 mt-5">
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/bike-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/bike-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/bike-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/bike-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/clean1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/repairing.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">Contact Us</h4>
+                    <div class="mt-5">
+                        <p class="text-white">sector:06, road:08, house:14 uttara-1230</p>
+                        <p class="text-white">email: theroyelcoatching@gmail.com</p>
+                        <p class="text-white">call: +880 1777-990704</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 text-center text-white">
+                <p>Copyright ©2021 All rights reserved | This template is made by Abu Hasna Rana</p>
+            </div>
+        </section>
+    </footer>
+    <!-- footer part end -->
+
+    <!-- javaScript file  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
